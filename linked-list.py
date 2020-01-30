@@ -13,7 +13,12 @@ class node:
 class linkedlistt:
     def __init__(self):
         self.head=None
-    pass
+    def printlist(self):
+        temp=self.head
+        while temp:
+            print(temp.data)
+            temp=temp.next
+
 
 n1=node("first-data")
 n2=node("second-data")
@@ -22,3 +27,4 @@ listt=linkedlistt()
 listt.head=n1
 n1.next=n2
 n2.next=n3
+listt.printlist()
